@@ -9,7 +9,8 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'echo passed'
-        git branch: 'main', url: 'https://github.com/Gokulraj20/java-maven-sonar-argocd-helm-k8s'
+        //git branch: 'main', url: 'https://github.com/Gokulraj20/java-maven-sonar-argocd-helm-k8s'
+        checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Gokulraj20/java-maven-sonar-argocd-helm-k8s']])
       }
     }
     stage('Build and Test') {
