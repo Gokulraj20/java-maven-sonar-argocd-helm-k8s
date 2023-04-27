@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:alpine-jre
+FROM openjdk:8-jdk-alpine
 
 # Simply the artifact path
 ARG artifact=target/spring-boot-app.jar
