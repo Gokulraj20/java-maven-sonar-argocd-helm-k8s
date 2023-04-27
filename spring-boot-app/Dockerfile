@@ -1,7 +1,7 @@
 FROM openjdk:8-jdk-alpine
 
 # Simply the artifact path
-ARG artifact=target/spring-boot-app.jar
+ARG artifact=target/spring-boot-web.jar
 
 WORKDIR /opt/app
 
